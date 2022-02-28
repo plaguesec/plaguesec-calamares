@@ -1,0 +1,17 @@
+Package: plaguesec-calamares
+Version: 1.0.0
+Architecture: all
+Maintainer: PlagueSec <team@plaguesec.com>
+Installed-Size: 5129
+Depends: calamares, cryptsetup, keyutils, qml-module-qtquick-window2, qml-module-qtquick2, dconf-gsettings-backend | gsettings-backend
+Breaks: calamares-settings-debian
+Replaces: calamares-settings-debian
+Provides: calamares-settings, calamares-settings-debian
+Section: utils
+Priority: optional
+Homepage: https://plaguesec.com
+Description: plaguesec theme and settings for the Calamares Installer
+ Calamares is a generic installer framework for Linux distributions.
+ By default, it contains a set of boilerplate wording and images. This
+ package provides the latest Parrot artwork as well as scripts that
+ supports EFI installations.

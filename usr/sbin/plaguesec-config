@@ -1,0 +1,11 @@
+#!/bin/bash
+if [ $XDG_CURRENT_DESKTOP ! "KDE" ]; then
+	:
+else
+	echo "/usr/sbin/sddm" > $CHROOT/etc/X11/default-display-manager
+	DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true chroot $CHROOT dpkg-reconfigure sddm
+fi
+# Delete Home
+for user in $(cd /home && ls); do
+	rm /home/$user/Desktop/README.license
+done
