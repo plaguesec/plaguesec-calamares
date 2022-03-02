@@ -35,5 +35,23 @@ fi
 # Delete Home
 for user in $(cd $CHROOT/home && ls); do
 	rm $CHROOT/home/$user/Desktop/README.license
+	rm $CHROOT/home/$user/Desktop/install-debian.desktop
 done
+# Delete Installer
+rmdir $CHROOT/etc/calamares
+rm $CHROOT/etc/xdg/autostart/calamares-desktop-icon.desktop
+rmdir $CHROOT/usr/lib/calamares
+rm $CHROOT/usr/bin/add-calamares-desktop-icon
+rm $CHROOT/usr/bin/install-debian
+rmdir $CHROOT/usr/lib/calamares
+rm $CHROOT/usr/sbin/sources-media
+rm $CHROOT/usr/sbin/sources-final
+rm $CHROOT/usr/sbin/bootloader-config
+rm $CHROOT/usr/sbin/plaguesec-config
+rmdir $CHROOT/usr/share/doc/calamares-settings-parrot
+rm $CHROOT/usr/share/applications/install-debian.desktop
+rmdir $CHROOT/usr/share/glib-2.0/schemas
+rm $CHROOT/usr/share/lintian/overrides/calamares-settings-parrot
+rm $CHROOT/usr/share/pixmaps/install-debian.png
+
 exit 0

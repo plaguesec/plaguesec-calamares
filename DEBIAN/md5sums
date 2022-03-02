@@ -8,7 +8,7 @@ d178b9bb370c010484b87a6ac7951a59  usr/lib/calamares/modules/sources-media-unmoun
 d4663e21d64a21aa758b12fa6d66f8b8  usr/lib/calamares/modules/sources-media/module.desc
 a4750ddbdde11eadd576ded9cc1e8697  usr/sbin/bootloader-config
 eb43cce2917bffaa9a89e47494568019  usr/sbin/sources-final
-bcbc876f1569cd988ba4edfd1488f8d3  usr/sbin/sources-media
+fa5c08a60ed7b41cca1a31e5e5539370  usr/sbin/sources-media
 c89b03d59eacb3ec6f74731b77544273  usr/share/applications/install-debian.desktop
 886eb9fb124091790fbeba09b28a3241  usr/share/doc/calamares-settings-parrot/changelog.gz
 327c63263e7307e9a3a0afef46dd832d  usr/share/doc/calamares-settings-parrot/copyright
