@@ -1,6 +1,0 @@
----
-type:       "job"
-name:       "plaguesec-config"
-interface:  "process"
-command:    "/usr/sbin/plaguesec-config"
-timeout:    900
